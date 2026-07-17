@@ -16,10 +16,10 @@ ServerEvents.recipes(event =>{
 
 
 
-    event.recipes.create.item_application('minecraft:soul_sand',[
-        'minecraft:sand',
-        'minecraft:rotten_flesh'
-    ])
+    // event.recipes.create.item_application('minecraft:soul_sand',[
+    //     'minecraft:sand',
+    //     'minecraft:rotten_flesh'
+    // ])
 
     const SHROOMLIGHT_INGREDIENTS = [
         'minecraft:red_mushroom_block',
@@ -166,19 +166,19 @@ ServerEvents.recipes(event =>{
     // .loops(5) // Set the number of loops
 
 
-    event.recipes.create.sequenced_assembly(
-        [
-        CreateItem.of('minecraft:blaze_rod')
-        ],
-        'minecraft:coal_block',
-        [
-            event.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block'),
-            event.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block'),
-            event.recipes.create.filling('minecraft:coal_block',['minecraft:coal_block', Fluid.of('minecraft:lava', 500)]),
-            event.recipes.create.filling('minecraft:coal_block',['minecraft:coal_block', Fluid.of('minecraft:lava', 500)])
-        ]
-    )
-    .transitionalItem('minecraft:coal_block')
+    // event.recipes.create.sequenced_assembly(
+    //     [
+    //     CreateItem.of('minecraft:blaze_rod')
+    //     ],
+    //     'minecraft:coal_block',
+    //     [
+    //         event.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block'),
+    //         event.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block'),
+    //         event.recipes.create.filling('minecraft:coal_block',['minecraft:coal_block', Fluid.of('minecraft:lava', 500)]),
+    //         event.recipes.create.filling('minecraft:coal_block',['minecraft:coal_block', Fluid.of('minecraft:lava', 500)])
+    //     ]
+    // )
+    // .transitionalItem('minecraft:coal_block')
 
     event.remove({id: 'minecraft:magma_cream'})
 
@@ -201,12 +201,12 @@ ServerEvents.recipes(event =>{
     // event.remove({id: 'tfmg:crafting/kinetics/steel_leggings'})
     // event.remove({id: 'tfmg:crafting/kinetics/steel_boots'})
 
-    event.remove({id: 'tfmg:crafting/materials/steel_shovel'})
-    event.remove({id: 'tfmg:crafting/materials/steel_pickaxe'})
-    event.remove({id: 'tfmg:crafting/materials/steel_hoe'})
-    event.remove({id: 'tfmg:crafting/materials/steel_axe'})
-    event.remove({id: 'tfmg:crafting/materials/steel_sword'})
-    event.remove({id: 'tfmg:crafting/materials/lithium_blade'})
+    // event.remove({id: 'tfmg:crafting/materials/steel_shovel'})
+    // event.remove({id: 'tfmg:crafting/materials/steel_pickaxe'})
+    // event.remove({id: 'tfmg:crafting/materials/steel_hoe'})
+    // event.remove({id: 'tfmg:crafting/materials/steel_axe'})
+    // event.remove({id: 'tfmg:crafting/materials/steel_sword'})
+    // event.remove({id: 'tfmg:crafting/materials/lithium_blade'})
 
     // event.remove({id: 'createbigcannons:steel_ingot_from_nuggets'})
     // event.remove({id: 'createbigcannons:steel_ingot_from_block'})
@@ -236,7 +236,7 @@ ServerEvents.recipes(event =>{
 
     event.remove({id: 'chunkloaders:ultimate_chunk_loader'})
 
-
+    event.remove({id: 'create_netherless:blaze_burner_recipe_from_craft'})
 
 })
 
