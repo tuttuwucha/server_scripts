@@ -136,6 +136,8 @@ ServerEvents.recipes(event =>{
         'minecraft:crimson_fungus'
     ])
 
+    event.recipes.create.crushing(['create:cinder_flour',CreateItem.of('create:cinder_flour', 0.5), CreateItem.of('tfmg:sulfur_dust', 0.3)], 'minecraft:netherrack')
+
 
 //     ПРИМЕР ПОСЛЕДОВАТЕЛЬНОЙ СБОРКИ:
     // event.recipes.create.sequenced_assembly(
@@ -237,6 +239,8 @@ ServerEvents.recipes(event =>{
     event.remove({id: 'chunkloaders:ultimate_chunk_loader'})
 
     event.remove({id: 'create_netherless:blaze_burner_recipe_from_craft'})
+
+    event.remove({id: 'create:crushing/netherrack'})
 
 })
 
