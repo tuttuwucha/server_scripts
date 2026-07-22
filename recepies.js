@@ -126,16 +126,6 @@ ServerEvents.recipes(event =>{
                          }
     )
 
-    event.recipes.create.item_application('minecraft:warped_nylium',[
-        'minecraft:netherrack',
-        'minecraft:warped_fungus'
-    ])
-
-    event.recipes.create.item_application('minecraft:crimson_nylium',[
-        'minecraft:netherrack',
-        'minecraft:crimson_fungus'
-    ])
-
     event.recipes.create.crushing(['create:cinder_flour',CreateItem.of('create:cinder_flour', 0.5), CreateItem.of('tfmg:sulfur_dust', 0.3)], 'minecraft:netherrack')
 
 
