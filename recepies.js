@@ -232,5 +232,6 @@ ServerEvents.recipes(event =>{
 
     event.remove({id: 'create:crushing/netherrack'})
 
+    event.remove({id: 'tfmg:mechanical_crafting/flamethrower'})
 })
 
